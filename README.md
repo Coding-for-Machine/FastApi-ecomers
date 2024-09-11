@@ -15,4 +15,8 @@ app = FastApi()
 asinc def home():
     awati {"name": "Asadbek", "age": 22}
 
+
+@app.get("/{id}")
+asinc def get_user(id):
+    return {"username": "Salom {id}"}
 ```
